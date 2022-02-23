@@ -53,9 +53,6 @@
     opacity: 1;
 }
 
-#first{
-    margin-top: 20%;
-}
 
 .team-slider{
     padding: 10px;
@@ -73,7 +70,7 @@
 }
 
 .container{
-    margin-top: 15% !important;
+    margin-top: 20% !important;
     width: 60%;
 }
 
