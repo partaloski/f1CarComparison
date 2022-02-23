@@ -1,0 +1,85 @@
+.car-img{
+    width: 50%;
+    height: auto;
+    position: absolute;
+    left: 25%;
+    top: 5%;
+    border-radius: 10px;
+    margin-top: 0;
+    transition: 400ms;
+}
+
+.not{
+    opacity: 0;
+}
+
+.ten{
+    opacity: 0.1;
+}
+
+.twenty{
+    opacity: 0.2;
+}
+
+.thirty{
+    opacity: 0.3;
+}
+
+.fourty{
+    opacity: 0.4;
+}
+
+.fifty{
+    opacity: 0.5;
+}
+
+.sixty{
+    opacity: 0.6;
+}
+
+.seventy{
+    opacity: 0.7;
+}
+
+.eighty{
+    opacity: 0.8;
+}
+
+.ninety{
+    opacity: 0.9;
+}
+
+.hundred{
+    opacity: 1;
+}
+
+#first{
+    margin-top: 20%;
+}
+
+.team-slider{
+    padding: 10px;
+    width: 30%;
+    border-radius: 10px;
+    border: 2px solid black;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 10px;
+    float: left;
+}
+
+.team-slider h3{
+    font-size: 220%;
+}
+
+.container{
+    margin-top: 15% !important;
+    width: 60%;
+}
+
+.slider-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
