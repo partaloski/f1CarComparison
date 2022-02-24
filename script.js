@@ -49,37 +49,37 @@ $(document).ready(function(){
         return String(v)+"%";
     }
 
-    $(at).on("change", function (){
+    $(at).on("input", function (){
         setValue($(this).val(), $("#at"))
         $(this).siblings("label").text(precise($(this).val()))
     })
 
-    $(am).on("change", function (){
+    $(am).on("input", function (){
         setValue($(this).val(), $("#am"))
         $(this).siblings("label").text(precise($(this).val()))
     })
 
-    $(al).on("change", function (){
+    $(al).on("input", function (){
         setValue($(this).val(), $("#al"))
         $(this).siblings("label").text(precise($(this).val()))
     })
 
-    $(fe).on("change", function (){
+    $(fe).on("input", function (){
         setValue($(this).val(), $("#fe"))
         $(this).siblings("label").text(precise($(this).val()))
     })
 
-    $(mc).on("change", function (){
+    $(mc).on("input", function (){
         setValue($(this).val(), $("#mc"))
         $(this).siblings("label").text(precise($(this).val()))
     })
 
-    $(me).on("change", function (){
+    $(me).on("input", function (){
         setValue($(this).val(), $("#me"))
         $(this).siblings("label").text(precise($(this).val()))
     })
 
-    $(rb).on("change", function (){
+    $(rb).on("input", function (){
         setValue($(this).val(), $("#rb"))
         $(this).siblings("label").text(precise($(this).val()))
     })
