@@ -37,121 +37,51 @@
         <h1 id="first" style="text-align: center">F1 2022 Team cars comparison</h1>
         <hr>
         <h3>All images were taken on 23/02/2022, during the early training phase in the morning, which was happening in Barcelona, Spain.</h3><br>
-    </div>
-    <div class="slider-container">
 
+        <div class="d-grid gap-2">
+            <button type="button" class="btn btn-outline-secondary btn-lg" id="buttonChangeOrder">Reverse order of images</button>
+        </div>
+
+        <br>
+    </div>
+    <div id="slider-container" class="slider-wrap-normal">
         <div class="team-slider">
             <h3>Alpha Tauri</h3>
-            <select id="alphaTauri" class="form-select form-select-lg">
-                <option value="0">0%</option>
-                <option value="0.1">10%</option>
-                <option value="0.2">20%</option>
-                <option value="0.3">30%</option>
-                <option value="0.4">40%</option>
-                <option value="0.5">50%</option>
-                <option value="0.6">60%</option>
-                <option value="0.7">70%</option>
-                <option value="0.8">80%</option>
-                <option value="0.9">90%</option>
-                <option value="1">100%</option>
-            </select>
+            <input type="range" min="0" max="1" step="0.1" id="alphaTauri" value="0" class="custom-range">
+            <label class="custom-file-label" for="alphaTauri">0%</label>
         </div>
         <div class="team-slider">
             <h3>Alpine</h3>
-            <select id="alpine" class="form-select form-select-lg">
-                <option value="0">0%</option>
-                <option value="0.1">10%</option>
-                <option value="0.2">20%</option>
-                <option value="0.3">30%</option>
-                <option value="0.4">40%</option>
-                <option value="0.5">50%</option>
-                <option value="0.6">60%</option>
-                <option value="0.7">70%</option>
-                <option value="0.8">80%</option>
-                <option value="0.9">90%</option>
-                <option value="1">100%</option>
-            </select>
+            <input type="range" min="0" max="1" step="0.1" id="alpine" value="0" class="custom-range">
+            <label class="custom-file-label" for="alpine">0%</label>
         </div>
         <div class="team-slider">
             <h3>Aston Martin</h3>
-            <select id="astonMartin" class="form-select form-select-lg">
-                <option value="0">0%</option>
-                <option value="0.1">10%</option>
-                <option value="0.2">20%</option>
-                <option value="0.3">30%</option>
-                <option value="0.4">40%</option>
-                <option value="0.5">50%</option>
-                <option value="0.6">60%</option>
-                <option value="0.7">70%</option>
-                <option value="0.8">80%</option>
-                <option value="0.9">90%</option>
-                <option value="1">100%</option>
-            </select>
+            <input type="range" min="0" max="1" step="0.1" id="astonMartin" value="0" class="custom-range">
+            <label class="custom-file-label" for="astonMartin">0%</label>
         </div>
         <div class="team-slider">
             <h3>Ferrari</h3>
-            <select id="ferrari" class="form-select form-select-lg">
-                <option value="0">0%</option>
-                <option value="0.1">10%</option>
-                <option value="0.2">20%</option>
-                <option value="0.3">30%</option>
-                <option value="0.4">40%</option>
-                <option value="0.5">50%</option>
-                <option value="0.6">60%</option>
-                <option value="0.7">70%</option>
-                <option value="0.8">80%</option>
-                <option value="0.9">90%</option>
-                <option value="1">100%</option>
-            </select>
+            <input type="range" min="0" max="1" step="0.1" id="ferrari" value="0" class="custom-range">
+            <label class="custom-file-label" for="ferrari">0%</label>
         </div>
         <div class="team-slider">
             <h3>McLaren</h3>
-            <select id="mcLaren" class="form-select form-select-lg">
-                <option value="0">0%</option>
-                <option value="0.1">10%</option>
-                <option value="0.2">20%</option>
-                <option value="0.3">30%</option>
-                <option value="0.4">40%</option>
-                <option value="0.5">50%</option>
-                <option value="0.6">60%</option>
-                <option value="0.7">70%</option>
-                <option value="0.8">80%</option>
-                <option value="0.9">90%</option>
-                <option value="1">100%</option>
-            </select>
+            <input type="range" min="0" max="1" step="0.1" id="mcLaren" value="0" class="custom-range">
+            <label class="custom-file-label" for="mcLaren">0%</label>
         </div>
         <div class="team-slider">
             <h3>Mercedes</h3>
-            <select id="mercedes" class="form-select form-select-lg">
-                <option value="0">0%</option>
-                <option value="0.1">10%</option>
-                <option value="0.2">20%</option>
-                <option value="0.3">30%</option>
-                <option value="0.4">40%</option>
-                <option value="0.5" selected>50%</option>
-                <option value="0.6">60%</option>
-                <option value="0.7">70%</option>
-                <option value="0.8">80%</option>
-                <option value="0.9">90%</option>
-                <option value="1">100%</option>
-            </select>
+            <input type="range" min="0" max="1" step="0.1" id="mercedes" value="0.5" class="custom-range">
+            <label class="custom-file-label" for="mercedes">50%</label>
         </div>
         <div class="team-slider">
             <h3>Red Bull</h3>
-            <select id="redBull" class="form-select form-select-lg">
-                <option value="0">0%</option>
-                <option value="0.1">10%</option>
-                <option value="0.2">20%</option>
-                <option value="0.3">30%</option>
-                <option value="0.4">40%</option>
-                <option value="0.5">50%</option>
-                <option value="0.6">60%</option>
-                <option value="0.7">70%</option>
-                <option value="0.8">80%</option>
-                <option value="0.9">90%</option>
-                <option value="1" selected>100%</option>
-            </select>
+            <input type="range" min="0" max="1" step="0.1" id="redBull" value="1" class="custom-range">
+            <label class="custom-file-label" for="redBull">100%</label>
         </div>
     </div>
+    <div id="images-temp"></div>
+    <div id="sliders-temp"></div>
 </body>
 </html>

@@ -7,32 +7,81 @@ $(document).ready(function(){
     var me = $("#mercedes")
     var rb = $("#redBull")
 
+    var orderChanged = false
+
+    $("#buttonChangeOrder").on("click", function (){
+
+        let elements = $("#images").children()
+
+        for(let i=elements.length-1; i>=0; i--) {
+            $("#images-temp").append(elements[i])
+        }
+
+        $("#images").children().remove()
+
+        elements = $("#images-temp").children()
+
+        for(let i=0; i<elements.length; i++) {
+            $("#images").append(elements[i])
+        }
+
+        $("#images-temp").children().remove()
+
+        elements = $("#slider-container").children()
+
+        for(let i=elements.length-1; i>=0; i--) {
+            $("#sliders-temp").append(elements[i])
+        }
+
+        $("#slider-container").children().remove()
+
+        elements = $("#sliders-temp").children()
+
+        for(let i=0; i<elements.length; i++) {
+            $("#slider-container").append(elements[i])
+        }
+
+    })
+
+    function precise(val){
+        let v = Number(val)
+        v*=100;
+        return String(v)+"%";
+    }
+
     $(at).on("change", function (){
         setValue($(this).val(), $("#at"))
+        $(this).siblings("label").text(precise($(this).val()))
     })
 
     $(am).on("change", function (){
         setValue($(this).val(), $("#am"))
+        $(this).siblings("label").text(precise($(this).val()))
     })
 
     $(al).on("change", function (){
         setValue($(this).val(), $("#al"))
+        $(this).siblings("label").text(precise($(this).val()))
     })
 
     $(fe).on("change", function (){
         setValue($(this).val(), $("#fe"))
+        $(this).siblings("label").text(precise($(this).val()))
     })
 
     $(mc).on("change", function (){
         setValue($(this).val(), $("#mc"))
+        $(this).siblings("label").text(precise($(this).val()))
     })
 
     $(me).on("change", function (){
         setValue($(this).val(), $("#me"))
+        $(this).siblings("label").text(precise($(this).val()))
     })
 
     $(rb).on("change", function (){
         setValue($(this).val(), $("#rb"))
+        $(this).siblings("label").text(precise($(this).val()))
     })
 
     function setValue(value, image){
