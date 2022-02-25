@@ -7,8 +7,6 @@ $(document).ready(function(){
     var me = $("#mercedes")
     var rb = $("#redBull")
 
-    var orderChanged = false
-
     $("#buttonChangeOrder").on("click", function (){
 
         let elements = $("#images").children()
@@ -26,21 +24,6 @@ $(document).ready(function(){
         }
 
         $("#images-temp").children().remove()
-
-        elements = $("#slider-container").children()
-
-        for(let i=elements.length-1; i>=0; i--) {
-            $("#sliders-temp").append(elements[i])
-        }
-
-        $("#slider-container").children().remove()
-
-        elements = $("#sliders-temp").children()
-
-        for(let i=0; i<elements.length; i++) {
-            $("#slider-container").append(elements[i])
-        }
-
     })
 
     function precise(val){
