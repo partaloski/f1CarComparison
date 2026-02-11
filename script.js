@@ -1,11 +1,13 @@
 $(document).ready(function(){
-    var at = $("#alphaTauri")
-    var al = $("#alpine")
-    var am = $("#astonMartin")
-    var fe = $("#ferrari")
-    var mc = $("#mcLaren")
-    var me = $("#mercedes")
-    var rb = $("#redBull")
+    const at = $("#alphaTauri")
+    const al = $("#alpine")
+    const am = $("#astonMartin")
+    const fe = $("#ferrari")
+    const mc = $("#mcLaren")
+    const me = $("#mercedes")
+    const rb = $("#redBull")
+    const ha = $("#haas")
+    const wi = $("#williams")
 
     $("#buttonChangeOrder").on("click", function (){
 
@@ -64,6 +66,16 @@ $(document).ready(function(){
 
     $(rb).on("input", function (){
         setValue($(this).val(), $("#rb"))
+        $(this).siblings("label").text(precise($(this).val()))
+    })
+
+    $(wi).on("input", function (){
+        setValue($(this).val(), $("#wi"))
+        $(this).siblings("label").text(precise($(this).val()))
+    })
+
+    $(ha).on("input", function (){
+        setValue($(this).val(), $("#ha"))
         $(this).siblings("label").text(precise($(this).val()))
     })
 

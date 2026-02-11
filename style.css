@@ -1,12 +1,16 @@
 .car-img{
-    width: 70%;
+    width: 40vw;
     height: auto;
     position: absolute;
-    left: 15%;
+    left: 30vw;
     top: 1vh;
     border-radius: 10px;
     margin-top: 0;
     transition: 400ms;
+}
+
+.team-slider:has(input:disabled){
+    display: none;
 }
 
 .not{
