@@ -69,13 +69,13 @@ $(document).ready(function(){
         $(this).siblings("label").text(precise($(this).val()))
     })
 
-    $(wi).on("input", function (){
-        setValue($(this).val(), $("#wi"))
+    $(ha).on("input", function (){
+        setValue($(this).val(), $("#ha"))
         $(this).siblings("label").text(precise($(this).val()))
     })
 
-    $(ha).on("input", function (){
-        setValue($(this).val(), $("#ha"))
+    $(wi).on("input", function (){
+        setValue($(this).val(), $("#wi"))
         $(this).siblings("label").text(precise($(this).val()))
     })
 
