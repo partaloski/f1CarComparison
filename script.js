@@ -1,12 +1,14 @@
 $(document).ready(function(){
-    const at = $("#alphaTauri")
     const al = $("#alpine")
+    const au = $("#audi")
     const am = $("#astonMartin")
+    const ca = $("#cadillac")
     const fe = $("#ferrari")
+    const ha = $("#haas")
     const mc = $("#mcLaren")
     const me = $("#mercedes")
+    const rab = $("#racingBulls")
     const rb = $("#redBull")
-    const ha = $("#haas")
     const wi = $("#williams")
 
     $("#buttonChangeOrder").on("click", function (){
@@ -34,11 +36,6 @@ $(document).ready(function(){
         return String(v)+"%";
     }
 
-    $(at).on("input", function (){
-        setValue($(this).val(), $("#at"))
-        $(this).siblings("label").text(precise($(this).val()))
-    })
-
     $(am).on("input", function (){
         setValue($(this).val(), $("#am"))
         $(this).siblings("label").text(precise($(this).val()))
@@ -49,8 +46,23 @@ $(document).ready(function(){
         $(this).siblings("label").text(precise($(this).val()))
     })
 
+    $(au).on("input", function (){
+        setValue($(this).val(), $("#au"))
+        $(this).siblings("label").text(precise($(this).val()))
+    })
+
+    $(ca).on("input", function (){
+        setValue($(this).val(), $("#ca"))
+        $(this).siblings("label").text(precise($(this).val()))
+    })
+
     $(fe).on("input", function (){
         setValue($(this).val(), $("#fe"))
+        $(this).siblings("label").text(precise($(this).val()))
+    })
+
+    $(ha).on("input", function (){
+        setValue($(this).val(), $("#ha"))
         $(this).siblings("label").text(precise($(this).val()))
     })
 
@@ -69,8 +81,8 @@ $(document).ready(function(){
         $(this).siblings("label").text(precise($(this).val()))
     })
 
-    $(ha).on("input", function (){
-        setValue($(this).val(), $("#ha"))
+    $(rab).on("input", function (){
+        setValue($(this).val(), $("#rab"))
         $(this).siblings("label").text(precise($(this).val()))
     })
 

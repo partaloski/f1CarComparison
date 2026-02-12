@@ -19,72 +19,82 @@
 </head>
 <body>
     <div id="images">
-        <!-- <img src="/img-2026/Red%20Bull.png" class="car-img hundred" id="rb">
-        <img src="/img-2026/Mercedes.png" class="car-img fifty" id="me"> -->
-        <!-- <img src="/img-2026/FERRARI.png" class="car-img not" id="fe">
+        <img src="./img-2026/Williams.png" class="car-img not" id="wi">
+        <img src="/img-2026/RedBull.png" class="car-img hundred" id="rb">
+        <img src="/img-2026/RacingBulls.png" class="car-img not" id="rab">
+        <img src="/img-2026/Mercedes.png" class="car-img not" id="me">
+        <img src="./img-2026/McLaren.png" class="car-img fifty" id="mc">
+        <img src="./img-2026/Haas.png" class="car-img not" id="ha">
+        <img src="/img-2026/Ferrari.png" class="car-img not" id="fe">
+        <img src="./img-2026/Cadillac.png" class="car-img not" id="ca">
+        <img src="./img-2026/Audi.png" class="car-img not" id="au">
         <img src="/img-2026/AstonMartin.png" class="car-img not" id="am">
         <img src="/img-2026/Alpine.png" class="car-img not" id="al">
-        <img src="/img-2026/AlphaTauri.png" class="car-img not" id="at"> -->
-        <img src="./img-2026/Williams.png" class="car-img hundred" id="wi">
-        <img src="./img-2026/Haas.png" class="car-img fifty" id="ha">
-        <img src="./img-2026/McLaren.png" class="car-img not" id="mc">
     </div>
     <div class="container">
-        <h1 id="first" class="display-2" style="text-align: center">F1 2026 Team cars comparison</h1>
+        <h1 id="first" class="display-5" style="text-align: center">F1 2026 Team cars comparison</h1>
         <hr>
-        <h5 class="display-6 text-justify large text-muted" style="font-size: 160%"  >All images were taken on 11/02/2026, during the early training phase in the morning, which was happening in Bahrain.</h5><br>
-
+        <h5 class="display-6 text-justify large text-muted small-text" style="font-size: 160%"  >All images were taken on 11/02/2026, during the early training phase in the morning, which was happening in Bahrain.</h5><br>
         <div class="d-grid gap-2">
             <button type="button" class="btn btn-outline-secondary btn-lg" style="font-size: 180%" id="buttonChangeOrder">Reverse order of images</button>
         </div>
-
         <br>
     </div>
     <div id="slider-container" class="slider-wrap-normal">
         <div class="team-slider">
-            <h3  class="display-3" >Alpha Tauri</h3>
-            <input type="range" min="0" max="1" step="0.1" id="alphaTauri" value="0" class="custom-range" disabled>
-            <label class="custom-file-label" for="alphaTauri">0%</label>
-        </div>
-        <div class="team-slider">
             <h3 class="display-3">Alpine</h3>
-            <input type="range" min="0" max="1" step="0.1" id="alpine" value="0" class="custom-range" disabled>
+            <input type="range" min="0" max="1" step="0.1" id="alpine" value="0" class="custom-range">
             <label class="custom-file-label" for="alpine">0%</label>
         </div>
         <div class="team-slider">
             <h3 class="display-3">Aston Martin</h3>
-            <input type="range" min="0" max="1" step="0.1" id="astonMartin" value="0" class="custom-range" disabled>
+            <input type="range" min="0" max="1" step="0.1" id="astonMartin" value="0" class="custom-range">
             <label class="custom-file-label" for="astonMartin">0%</label>
         </div>
         <div class="team-slider">
+            <h3 class="display-3">Audi</h3>
+            <input type="range" min="0" max="1" step="0.1" id="audi" value="0" class="custom-range">
+            <label class="custom-file-label" for="audi">0%</label>
+        </div>
+        <div class="team-slider">
+            <h3 class="display-3">Cadillac</h3>
+            <input type="range" min="0" max="1" step="0.1" id="cadillac" value="0" class="custom-range">
+            <label class="custom-file-label" for="cadillac">0%</label>
+        </div>
+        <div class="team-slider">
             <h3 class="display-3">Ferrari</h3>
-            <input type="range" min="0" max="1" step="0.1" id="ferrari" value="0" class="custom-range" disabled>
+            <input type="range" min="0" max="1" step="0.1" id="ferrari" value="0" class="custom-range">
             <label class="custom-file-label" for="ferrari">0%</label>
         </div>
         <div class="team-slider">
+            <h3 class="display-3">Haas</h3>
+            <input type="range" min="0" max="1" step="0.1" id="haas" value="0" class="custom-range">
+            <label class="custom-file-label" for="haas">0%</label>
+        </div>
+        <div class="team-slider">
             <h3 class="display-3">McLaren</h3>
-            <input type="range" min="0" max="1" step="0.1" id="mcLaren" value="0" class="custom-range">
-            <label class="custom-file-label" for="mcLaren">0%</label>
+            <input type="range" min="0" max="1" step="0.1" id="mcLaren" value="0.5" class="custom-range">
+            <label class="custom-file-label" for="mcLaren">50%</label>
         </div>
         <div class="team-slider">
             <h3 class="display-3">Mercedes</h3>
-            <input type="range" min="0" max="1" step="0.1" id="mercedes" value="0.5" class="custom-range" disabled>
-            <label class="custom-file-label" for="mercedes">50%</label>
+            <input type="range" min="0" max="1" step="0.1" id="mercedes" value="0" class="custom-range">
+            <label class="custom-file-label" for="mercedes">0%</label>
+        </div>
+        <div class="team-slider">
+            <h3 class="display-3">Racing Bulls</h3>
+            <input type="range" min="0" max="1" step="0.1" id="racingBulls" value="0" class="custom-range">
+            <label class="custom-file-label" for="racingBulls">0%</label>
         </div>
         <div class="team-slider">
             <h3 class="display-3">Red Bull</h3>
-            <input type="range" min="0" max="1" step="0.1" id="redBull" value="1" class="custom-range" disabled>
+            <input type="range" min="0" max="1" step="0.1" id="redBull" value="1" class="custom-range">
             <label class="custom-file-label" for="redBull">100%</label>
         </div>
         <div class="team-slider">
-            <h3 class="display-3">Haas</h3>
-            <input type="range" min="0" max="1" step="0.1" id="haas" value="0.5" class="custom-range">
-            <label class="custom-file-label" for="haas">50%</label>
-        </div>
-        <div class="team-slider">
             <h3 class="display-3">Williams</h3>
-            <input type="range" min="0" max="1" step="0.1" id="williams" value="1" class="custom-range">
-            <label class="custom-file-label" for="williams">100%</label>
+            <input type="range" min="0" max="1" step="0.1" id="williams" value="0" class="custom-range">
+            <label class="custom-file-label" for="williams">0%</label>
         </div>
     </div>
     <div id="images-temp"></div>
